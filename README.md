@@ -3,7 +3,8 @@
 - Download the Zookeeper from page https://zookeeper.apache.org/releases.html (3.5.8)
 - Download the Kafka from page https://kafka.apache.org/downloads (kafka_2.13-2.6.0)
 # Start Zookeeper 
-- Configure Zookeeper Admin (in `/conf/zoo.cfg` file) netty server port to `admin.serverPort=8099`. This to avoid the App default port 8080 conflict later
+- Clone file `/conf/zoo_sample.cfg` to `/conf/zoo.cfg`
+- Configure Zookeeper Admin (in `/conf/zoo.cfg` file) netty server port by adding this line `admin.serverPort=8099` at the end of the zoo.cfg file. This is to avoid the App default port 8080 conflict later.
 - Run command to start `./zkServer.cmd start`
 
 # Stop Zookeeper 
