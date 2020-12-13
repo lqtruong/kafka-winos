@@ -18,6 +18,7 @@
 
 ## Topics
 - Run command to create a topic: `./kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test_truong`
+- Run command to list all topics: `./kafka-topics.bat --list --zookeeper localhost:2181`
 
 ## Test Topics
 - Run command to verify if a topic was created: `./kafka-topics.bat --describe --topic test_truong --bootstrap-server localhost:9092`
