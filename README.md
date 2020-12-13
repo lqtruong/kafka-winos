@@ -5,7 +5,7 @@
 # Start Zookeeper 
 - Clone file `/conf/zoo_sample.cfg` to `/conf/zoo.cfg`
 - Configure Zookeeper Admin (in `/conf/zoo.cfg` file) netty server port by adding this line `admin.serverPort=8099` at the end of the zoo.cfg file. This is to avoid the App default port 8080 conflict later.
-- Run command to start `./zkServer.cmd start`
+- Run command to start `./zkServer.cmd`
 
 # Stop Zookeeper 
 - Run command to stop: `./zkServer.cmd stop`
