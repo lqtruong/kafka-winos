@@ -1,20 +1,19 @@
-# kafka-docker
-Kafka docker for Windows OS
+# Kafka docker for Windows OS
 
 Download the Zookeeper from page https://zookeeper.apache.org/releases.html (3.5.8)
 Download the Kafka from page https://kafka.apache.org/downloads (kafka_2.13-2.6.0)
-#Start Zookeeper 
+# Start Zookeeper 
 ## Configure Zookeeper Admin netty server port to admin.serverPort=8099. This to avoid the App default port 8080 conflict later
 ## Run command to start ./zkServer.cmd start
 
-#Stop Zookeeper 
+# Stop Zookeeper 
 ./zkServer.cmd stop
 
-#Start Kafka
+# Start Kafka
 ## Configure config/server.properties the Zookeeper admin port in zookeeper.properties (e.g admin.serverPort=8099)
 ## Run command to start ./kafka-server-start.bat ../../config/server.properties
 
-#Stop Kafka
+# Stop Kafka
 ./kafka-server-stop.bat
 
 TOPICS
