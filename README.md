@@ -30,4 +30,7 @@
 - Write some events into the Topic (at `kafka-console-producer` terminal): **This is truong event**
 - Will see the events printed out from reading by the consumer (at `kafka-console-consumer` terminal) => **This is truong event**
 
+# Kafka docker for MacOS
+Same to commands with WinOS, but the relative path to `./bin/kafka-topics.sh`
+
 Happy coding!
