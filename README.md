@@ -20,7 +20,7 @@
 ## Delete a Topic manually
 - Enable deletion possibility on kafka server: `delete.topic.enable=true` in `.\config\server.properties`
 - Run command to delete a topic: `.\bin\windows\kafka-topics.bat --delete --topic test_truong --bootstrap-server localhost:9092`
-- Hints: Possibly, stop the kafka server. We can go to the temporary kafka & zookeeper logs (e.g. tmp/kafka-logs) and delete all data in this directory. Then start the kafka server.
+- Hints: `possibly, stop the kafka server. We can go to the temporary kafka & zookeeper logs (e.g. tmp/kafka-logs) and delete all data in this directory. Then start the kafka server`
 
 ## Test Topics
 - Run command to verify if a topic was created: `.\bin\windows\kafka-topics.bat --describe --topic test_truong --bootstrap-server localhost:9092`
