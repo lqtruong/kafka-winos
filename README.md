@@ -1,4 +1,4 @@
-# Kafka docker for Windows OS
+# Kafka Installation for Windows OS
 
 - Download the Kafka from page https://kafka.apache.org/downloads (kafka_2.13-2.7.0)
 # Start Zookeeper 
@@ -29,7 +29,7 @@
 - Open terminal to read the event from the topic: `.\bin\windows\kafka-console-consumer.bat --topic test_truong --from-beginning --bootstrap-server localhost:9092`
 - Will see the events printed out from reading by the consumer **This is truong event**
 
-# Kafka docker for MacOS
+# Kafka for MacOS
 Same to commands with WinOS, but the relative path to `./bin/kafka-topics.sh`
 
 # Misc
