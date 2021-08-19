@@ -1,6 +1,20 @@
 # Kafka Installation for Windows OS
 
 - Download the Kafka from page https://kafka.apache.org/downloads (kafka_2.13-2.7.0)
+
+# Config
+Change the configuration in `.\config\server.properties` to enable the listeners, advertised.listeners and zookeeper.connect
+
+```
+listeners=PLAINTEXT://:9092
+
+# Hostname and port the broker will advertise to producers and consumers. If not set, 
+# it uses the value for "listeners" if configured.  Otherwise, it will use the value
+# returned from java.net.InetAddress.getCanonicalHostName().
+advertised.listeners=PLAINTEXT://localhost:9092
+zookeeper.connect=localhost:2181
+```
+
 # Start Zookeeper 
 - Run command to start `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
 
